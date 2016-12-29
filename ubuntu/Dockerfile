@@ -6,3 +6,5 @@ RUN apt-get update -y && \
     apt-get install curl unzip zip -y && \
     apt-get clean && \
     curl -s get.sdkman.io | bash
+
+ENTRYPOINT ["entrypoint.sh"]
